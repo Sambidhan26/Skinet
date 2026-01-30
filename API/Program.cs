@@ -22,6 +22,7 @@ var app = builder.Build();
 
 app.MapControllers();
 
+//Services Scope to run migration and seed data using Json file
 try
 {
     using var scope = app.Services.CreateScope();
